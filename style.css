@@ -660,12 +660,16 @@ body{
         padding-right: 20px;
     }
     .product-card {
-        justify-content: space-between;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
     }
 
     .pro-card {
         width: calc(50% - 20px); /* subtracting margin/gap to fit two columns */
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         box-sizing: border-box;
         border: #1d232c solid 1px;
         height: 250px;
