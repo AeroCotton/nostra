@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra | Collections</title>
+    <!-- Header Icon -->
+    <link rel="shortcut icon" href="images/N-logo.png" type="image/x-icon">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1><a href="index.html">Nostra</a></h1>
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="navbar-link"><a href="contact.html">Contact Us</a></p>
+        </div>
+        <div class="navbar-menu-toggle" onclick="showNavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Side Navbar -->
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="closeNavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="index.html">Home</a></p>
+            <p class="side-navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="side-navbar-link"><a href="contact.html">Contact Us</a></p>
+        </div>
+
+    </div>
+
+    <!-- Image Slider -->
+    <section class="container">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img id="slide-1" src="images/slide1.png" alt="Slide-1">
+                <img id="slide-2" src="images/slide2.png" alt="Slide-2">
+                <img id="slide-3" src="images/slide3.png" alt="Slide-3">
+            </div>
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Mobile -->
+    <div class="collection-hero">
+        <div class="hero-text">
+            <h1>Collections</h1>
+            <p>Explore our exclusive collections of products that cater to your unique style and preferences.</p>
+            <button class="collection-btn">Explore Now<i class="fa fa-arrow-circle-o-down"
+                    aria-hidden="true"></i></button>
+        </div>
+        <div class="collection-hero-img">
+            <img src="" alt="">
+        </div>
+    </div>
+
+    <!-- Search bar & Products-->
+    <div class="product-section">
+        <div class="product-search">
+            <input type="text" placeholder="Search for products..." id="search">
+            <!-- <i class="fa fa-search" aria-hidden="true"></i> -->
+        </div>
+        <div class="product-card">
+            <div class="pro-card">
+                <img src="https://img.freepik.com/free-photo/young-woman-with-shopping-bags-beautiful-dress_1303-17550.jpg?ga=GA1.1.1596988081.1739949044&semt=ais_hybrid"
+                    alt="Product-1">
+                <p class="desktop-p">Women's Stylish Dress with Shopping Bags</p>
+                <p class="mobile-p">₹ 250</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="pro-card">
+                <img src="https://img.freepik.com/free-photo/happy-lady-stylish-skirt-boater-posing-pink-wall_197531-23653.jpg?ga=GA1.1.1596988081.1739949044&semt=ais_hybrid"
+                    alt="Product-2">
+                <p class="desktop-p">Women's Stylish Skirt & Boater Hat</p>
+                <p class="mobile-p">₹ 350</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="pro-card">
+                <img src="https://img.freepik.com/free-photo/young-girl-talor-fitting-dress-dummy_1220-7465.jpg?ga=GA1.1.1596988081.1739949044&semt=ais_hybrid"
+                    alt="Product-3">
+                <p class="desktop-p">Elegant Dress Fitting on Mannequin</p>
+                <p class="mobile-p">₹ 450</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="pro-card">
+                <img src="https://img.freepik.com/free-photo/woman-with-shopping-bags-studio-yellow-background-isolated_1303-14291.jpg?ga=GA1.1.1596988081.1739949044&semt=ais_hybrid"
+                    alt="Product-4">
+                <p class="desktop-p">Chic Yellow Off-Shoulder Top</p>
+                <p class="mobile-p">₹ 550</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-text">
+            <h2><a href="index.html">Nostra</a></h2>
+            <p>We provide the best products and services to meet your needs. Quality and customer satisfaction are our
+                top priorities.</p>
+        </div>
+        <!-- <div class="quick-links">
+            <h4>Quick Links</h4>
+        </div>
+        <div class="quick-link">
+            <p><a href="index.html">Home</a></p>
+            <p><a href="collection.html">Collections</a></p>
+            <p><a href="contact.html">Contact Us</a></p>
+        </div> -->
+        <div class="social-text">
+            <h4>Also Follow Us on</h4>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="copyrights">
+            <p>&copy; 2023-2025 Nostra. All rights reserved.</p>
+        </div>
+    </div>
+
+    <!-- Javascript link -->
+    <script src="index.js"></script>
+</body>
+
+</html>
