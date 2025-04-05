@@ -469,7 +469,9 @@ body{
     transition: 0.3s;
 }
 .mobile-p{
-    display: none;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 /* Media Query */
 @media screen and (max-width: 700px) {
@@ -672,10 +674,7 @@ body{
         margin-bottom: 10px;
         box-sizing: border-box;
         border: #1d232c solid 1px;
-        height: 250px;
-    }
-    .desktop-p {
-        display: none;
+        height: 300px;
     }
     .mobile-p {
         display: block;
