@@ -271,7 +271,11 @@ body{
     color: white;
     transition: 0.3s;
 }
-
+.subscribe i{
+    padding-left: 20px;
+    padding-right: 10px;
+    text-align: center;
+}
 /* Footer */
 .footer{
     background-color: #1d232c;
