@@ -493,6 +493,25 @@ body{
     padding-left: 20px;
     padding-right: 20px;
 }
+
+#overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4); /* semi-transparent black */
+    z-index: 99; /* behind the sidebar, but above everything else */
+}
+
+.side-navbar {
+    z-index: 100; /* Ensure it's above the overlay */
+}
+.no-scroll{
+    overflow: hidden; /* Prevent scrolling when sidebar is open */
+    height: 100vh; /* Prevent scrolling when sidebar is open */
+}
 /* Media Query */
 @media screen and (max-width: 700px) {
     .navbar{
