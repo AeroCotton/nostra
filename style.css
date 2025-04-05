@@ -696,4 +696,9 @@ body{
         margin: 10px auto;
         display: block;
     }
+    .product-search p{
+        color: #1d232c;
+        text-align: center;
+        padding-right: 20px;
+    }
 }
