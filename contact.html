@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,6 +21,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
+
 <body>
     <!-- Navbar -->
     <nav class="navbar">
@@ -50,9 +52,81 @@
     <!-- Overlay that shows when sidebar is open -->
     <div id="overlay" onclick="closeNavbar()"></div>
 
+    <div class="contact-container">
+        <div class="content">
+            <div class="left-side">
+                <div class="address-details">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <div class="topic">Address</div>
+                    <div class="text-one">10799 Corwin Course</div>
+                    <div class="text-two">Egypt</div>
+                </div>
+                <div class="phone-details">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <div class="topic">Phone</div>
+                    <div class="text-one">+91 12345 67890</div>
+                    <div class="text-two">+91 09876 54321</div>
+                </div>
+                <div class="email-details">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <div class="topic">Email</div>
+                    <div class="text-one">info.nostra@gmail.com</div>
+                    <div class="text-two">order.nostra@gmail.com</div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="topic-text">Send us a message</div>
+                <p>We’d love to hear from you! Whether you have questions, feedback, or inquiries, feel free to reach
+                    out using the form below. Our team is committed to responding promptly and providing the support you
+                    need.</p>
 
-    
+                <form action="#">
+                    <div class="input-box">
+                        <input type="text" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-box message-box">
+                        <textarea required name="message" placeholder="Enter your message"></textarea>
+                    </div>
+                    <div class="button">
+                        <input class="btn" type="submit" value="Send Now">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-text">
+            <h2><a href="index.html">Nostra</a></h2>
+            <p>We provide the best products and services to meet your needs. Quality and customer satisfaction are our
+                top priorities.</p>
+        </div>
+        <!-- <div class="quick-links">
+            <h4>Quick Links</h4>
+        </div>
+        <div class="quick-link">
+            <p><a href="index.html">Home</a></p>
+            <p><a href="collection.html">Collections</a></p>
+            <p><a href="contact.html">Contact Us</a></p>
+        </div> -->
+        <div class="social-text">
+            <h4>Also Follow Us on</h4>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="copyrights">
+            <p>&copy; 2023-2025 Nostra. All rights reserved.</p>
+        </div>
+    </div>
     <!-- Javascript link -->
     <script src="index.js"></script>
 </body>
+
 </html>

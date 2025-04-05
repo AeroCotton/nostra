@@ -516,7 +516,117 @@ body{
     overflow: hidden; /* Prevent scrolling when sidebar is open */
     height: 100vh; /* Prevent scrolling when sidebar is open */
 }
-/* Media Query */
+
+/* Contact form */
+.contact-container{
+    width: 85%;
+    border-radius: 6px;
+    margin-top: 100px;
+    padding: 30px 60px 30px 40px;
+    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); */
+    margin-left: 50px;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left-side{
+    width: 25%;
+    height: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.left-side::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    width: 2px;
+    height: 80%;
+    background-color: #1d232c;
+    opacity: 0.8;
+    transform: translateY(-50%);
+}
+.address-details{
+    margin-left: 14px;
+    text-align: center;
+}
+.left-side i{
+    font-size: 15px;
+    color: #1d232c;
+    margin-top: 20px;
+    /* margin-bottom: 20px; */
+}
+.topic{
+    font-size: 18px;
+    font-weight: 500;
+}
+.phone-details{
+    margin-left: 14px;
+    text-align: center;
+}
+.email-details{
+    margin-left: 14px;
+    text-align: center;
+}
+.text-one,.text-two{
+    font-size: 14px;
+    color: #1d232c;
+}
+.right-side{
+    width: 75%;
+    margin-left: 75px;
+}
+.topic-text{
+    font-size: 23px;
+    font-weight: 600;
+    color: #1d232c;
+}
+.input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+.input-box input, .input-box textarea{
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    border-radius: 6px;
+    background: #f2f4f7;
+    padding-left: 20px;
+    padding-right: 10px;
+    resize: none;
+}
+.input-box textarea{
+    font-size: 16px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.right-side .button{
+    margin-top: 30px;
+}
+.right-side .message-box{
+    min-height: 110px;
+    margin-top: 6px;
+}
+.input-box input:focus, .input-box textarea:focus{
+    outline: none;
+}
+/* Media Query for Contact Section */
+@media screen and (max-width: 950px){
+    .contact-container{
+        width: 70%;
+        padding: 30px 35px 40px 35px;
+    }
+}
+/* Media Query for All */
 @media screen and (max-width: 700px) {
     .navbar{
         position: fixed;
@@ -738,5 +848,73 @@ body{
         width: 80%;
         margin: 10px auto;
         display: block;
+    }
+
+    /* Contact form */
+    .left-side{
+        width: 100%;
+        height: 100%;
+        /* margin-top: 0px; */
+        position: relative;
+    }
+    .contact-container{
+        width: 70%;
+        margin-top: 100px;
+        margin-left: 0;
+        margin-right: 0px;
+        height: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    .topic-text{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .right-side form{
+        width: 100%;
+        margin-right: 50px;
+        justify-content: center;
+        text-align: center;
+    }
+    .content{
+        flex-direction: column-reverse;
+    }
+    .left-side{
+        width: 100%;
+        flex-direction: row;
+        margin-top: 50px;
+        margin-left: 30%;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .left-side::before{
+        display: none;
+    }
+    .right-side{
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        margin-left: 30%;
+    }
+    .right-side p{
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 500px){
+    .right-side p{
+        display: none;
+    }
+    .topic-text{
+        margin-bottom: 20px;
+    }
+    .right-side{
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        margin-left: 20%;
+    }
+    .left-side{
+        margin-left: 20%;
     }
 }
