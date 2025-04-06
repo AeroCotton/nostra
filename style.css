@@ -897,6 +897,9 @@ body{
         text-align: center;
         margin-left: 30%;
     }
+    .right-side .button{
+        margin-right: 70%;
+    }
     .right-side p{
         margin-bottom: 20px;
     }
@@ -916,5 +919,19 @@ body{
     }
     .left-side{
         margin-left: 20%;
+    }
+    .right-side .button{
+        margin-right: 55%;
+    }
+}
+@media screen and (max-width: 400px){
+    .right-side{
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        margin-right: 10%;
+    }
+    .right-side .button{
+        margin-right: 40%;
     }
 }
