@@ -925,6 +925,9 @@ body{
     }
 }
 @media screen and (max-width: 400px){
+    .left-side{
+        margin-right: 10px;
+    }
     .right-side{
         width: 100%;
         justify-content: center;
