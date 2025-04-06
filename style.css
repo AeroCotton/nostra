@@ -619,11 +619,30 @@ body{
 .input-box input:focus, .input-box textarea:focus{
     outline: none;
 }
+
+/* Thankyou page */
+
+.thank-you-container{
+    margin-top: 10%;
+    margin-bottom: 23%;
+    padding-top: 7%;
+    width: 100%;
+    background-color: white;
+    color: #1d232c;
+    text-align: center;
+    justify-content: center;
+}
+.thank-you-button{
+    margin-top: 20px;
+}
 /* Media Query for Contact Section */
 @media screen and (max-width: 950px){
     .contact-container{
         width: 70%;
         padding: 30px 35px 40px 35px;
+    }
+    .thank-you-container{
+        margin-top: 20%;
     }
 }
 /* Media Query for All */
@@ -924,6 +943,14 @@ body{
     .right-side .button{
         margin-right: 55%;
     }
+    .thank-you-container{
+        margin-top: 100px;
+        padding-top: 23%;
+    }
+    .thank-you-container p{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
 @media screen and (max-width: 400px){
     .left-side{
@@ -937,5 +964,9 @@ body{
     }
     .right-side .button{
         margin-right: 40%;
+    }
+    .thank-you-container{
+        margin-top: 100px;
+        padding-top: 100px;
     }
 }

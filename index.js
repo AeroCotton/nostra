@@ -9,7 +9,7 @@ function showNavbar() {
 }
 
 function closeNavbar() {
-    sidenav.style.left = "-65%"
-    document.getElementById("overlay").style.display = "none";
-    document.body.classList.remove("no-scroll"); // Enable scrolling again
+  sidenav.style.left = "-65%"
+  document.getElementById("overlay").style.display = "none";
+  document.body.classList.remove("no-scroll"); // Enable scrolling again
 }
